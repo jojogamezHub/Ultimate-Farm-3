@@ -191,7 +191,7 @@ def sensor_username(username):
 
 def executeBot(currentAccount, notifier: Notifier, args: argparse.Namespace):
     logging.info(
-        f'********************{sensor_username(currentAccount.get('username', ''))}********************'
+        f'********************{sensor_username(currentAccount.get("username", ""))}********************'
     )
     
     accountPointsCounter = 0
