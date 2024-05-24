@@ -189,7 +189,7 @@ def sensor_username(username):
     # Replace all characters in the username except the first letter with asterisks
     return username[0] + '*' * (len(username) - 1)
 
-def executeBot(currentAccount, notifier: Notifier, args: argparse.Namespace):
+def executeBot(currentAccount, args: argparse.Namespace):
     logging.info(
         f'********************{sensor_username(currentAccount.get("username", ""))}********************'
     )
